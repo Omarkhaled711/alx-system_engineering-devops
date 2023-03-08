@@ -3,4 +3,5 @@
 1-listit: Display the contents list of your current directory.  
 3-listfiles: Display current directory contents in a long format  
 4-listmorefiles: Display current directory contents, including hidden files  
-5-listfilesdigitonly: List numeric users and group IDs
+5-listfilesdigitonly: List numeric users and group IDs  
+6-firstdirectory: a script that creates a directory named my_first_directory in the /tmp/ directory.
