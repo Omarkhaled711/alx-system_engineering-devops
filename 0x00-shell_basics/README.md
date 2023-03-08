@@ -10,4 +10,5 @@
 9-firstdirdeletion: Delete the directory my_first_directory that is in the /tmp directory.  
 10-back: A script that changes the working directory to the previous one.  
 11-lists: A script that lists all files in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.  
-12-file_type: A script that prints the type of the file named iamafile which is in /tmp dircectory.
+12-file_type: A script that prints the type of the file named iamafile which is in /tmp dircectory.  
+13-symbolic_link: Create a symbolic link to /bin/ls.
