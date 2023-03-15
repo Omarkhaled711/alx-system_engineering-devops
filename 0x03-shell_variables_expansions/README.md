@@ -14,4 +14,5 @@
 13-print_float: a script that prints a number with two decimal places, followed by a new line.  
 100-decimal_to_hexadecimal: a script that converts a number stored in variable called DECIMAL from base 10 to base 16  
 101-rot13: a script that encodes and decodes text using the rot13 encryption.
-102-odd: prints every odd line starting from the first line
+102-odd: prints every odd line starting from the first line  
+103-water_and_stir: a shell script that adds the two numbers stored in the environment variables WATER and STIR and prints the result, where WATER is in base "water", STIR is in base "stir." and the resul is in base bestchol
