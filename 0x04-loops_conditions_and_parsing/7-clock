@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script is displaying clock Hours:Min from 0:1 to 12:59
+
+Hour=0
+Min=1
+while (( Hour < 13 ))
+do
+	echo "Hour: $Hour"
+	while (( Min < 60 ))
+	do
+		echo "$Min"
+		(( Min++ ))
+	done
+	(( Min = 1))
+	(( Hour++ ))
+done

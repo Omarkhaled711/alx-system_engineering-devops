@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script loops through all files in the current directory
+
+for file in *
+do
+	if [[ "${file}" != .* ]]
+	then
+		fileName=$(echo "${file}" | cut -d '-' -f 2-)
+		echo "$fileName"
+	fi
+done
