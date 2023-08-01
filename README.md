@@ -8,7 +8,8 @@ This repository contains the materials for the ALX System Engineering/DevOps cur
 - Shell variable expansions
 - Loops, conditions, and parsing
 - Processes and signals
-
+- Regular expressions
+  
 ## Contents
 
 The repository contains the following directories, each of which corresponds to a different topic in the curriculum:
@@ -19,7 +20,8 @@ The repository contains the following directories, each of which corresponds to 
 - [`0x03-shell_variable_expansions/`](https://github.com/Omarkhaled711/alx-system_engineering-devops/tree/master/0x03-shell_variable_expansions)
 - [`0x04-loops_conditions_and_parsing/`](https://github.com/Omarkhaled711/alx-system_engineering-devops/tree/master/0x04-loops_conditions_and_parsing)
 - [`0x05-processes_and_signals/`](https://github.com/Omarkhaled711/alx-system_engineering-devops/tree/master/0x05-processes_and_signals)
-
+- [`0x06-regular_expressions/`](https://github.com/Omarkhaled711/alx-system_engineering-devops/tree/master/0x06-regular_expressions/)
+  
 ## How to Use
 
 Each directory contains files and resources related to the corresponding topic in the curriculum. README files in each directory provide additional information about the contents of the directory and how to use them.
