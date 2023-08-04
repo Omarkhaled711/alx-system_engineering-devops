@@ -9,6 +9,7 @@ This repository contains the materials for the ALX System Engineering/DevOps cur
 - Loops, conditions, and parsing
 - Processes and signals
 - Regular expressions
+- Networking basics
   
 ## Contents
 
@@ -21,6 +22,8 @@ The repository contains the following directories, each of which corresponds to 
 - [`0x04-loops_conditions_and_parsing/`](https://github.com/Omarkhaled711/alx-system_engineering-devops/tree/master/0x04-loops_conditions_and_parsing)
 - [`0x05-processes_and_signals/`](https://github.com/Omarkhaled711/alx-system_engineering-devops/tree/master/0x05-processes_and_signals)
 - [`0x06-regular_expressions/`](https://github.com/Omarkhaled711/alx-system_engineering-devops/tree/master/0x06-regular_expressions/)
+- [`0x07-networking_basics/`](https://github.com/Omarkhaled711/alx-system_engineering-devops/tree/master/0x07-networking_basics/)
+- [`0x08-networking_basics_2/`](https://github.com/Omarkhaled711/alx-system_engineering-devops/tree/master/0x08-networking_basics_2/)
   
 ## How to Use
 
