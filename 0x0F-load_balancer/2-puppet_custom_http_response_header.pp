@@ -8,7 +8,7 @@ ensure  => 'installed',
 require => Exec['update']
 }
 exec { 'add_header':
-  command  => "sed -i '/http {/a server_tokens off;\\n   add_header X-Served-By ${hostname};' /etc/nginx/nginx.conf;",
+  command  => "sed -i '/listen 80 default_server;/a add_header X-Served-By ${hostname};' /etc/nginx/sites-available/default;",
   provider => shell,
 }
 exec { 'restart':
