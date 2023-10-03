@@ -1,21 +1,17 @@
 # Automate the task of creating a custom HTTP header response
-include stdlib
-
+exec { 'update':
+command  => '/usr/bin/apt update',
+provider => shell,
+}
 package { 'nginx':
-  ensure => installed,
+ensure  => 'installed',
+require => Exec['update']
 }
-
-file_line { 'add_custom_header':
-  ensure  => present,
-  line    => "  add_header X-Served-By ${hostname};",
-  path    => '/etc/nginx/nginx.conf',
-  after   => '^http {',
-  require => Package['nginx'],
-  notify  => Service['nginx'],
+exec { 'add_header':
+  command  => "sed -i '/http {/a server tokens off;\\n   add_header X-Served-By ${hostname};' /etc/nginx/nginx.conf;",
+  provider => shell,
 }
-
-service { 'nginx':
-  ensure    => running,
-  enable    => true,
-  subscribe => File_line['add_custom_header'],
+exec { 'restart':
+command  => '/usr/sbin/service nginx restart',
+provider => shell,
 }
