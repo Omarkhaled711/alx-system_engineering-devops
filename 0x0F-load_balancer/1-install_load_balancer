@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# install and configure HAproxy on a server.
+
+sudo apt update
+sudo apt-get instally haproxy -y
+
+sudo chmod +x /etc/init.d/haproxy
+
+echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
+
+printf \
+"frontend whatever \n\
+    bind *:80\n\
+    mode http\n\
+    timeout client 10s\n\
+    default_backend all\n\
+\
+backend all\n\
+    timeout connect 10s\n\
+    timeout server 20s\n\
+    mode http\n\
+    server 348265-web-01 54.144.156.245\n\
+    server 348265-web-02 54.210.109.65\n\
+" | sudo tee -a /etc/haproxy/haproxy.cfg
+
+sudo services haprooxy restart
