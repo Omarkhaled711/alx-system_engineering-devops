@@ -3,7 +3,7 @@
 
 showSubdomainInfo() {
     dig +noall +answer "$1" | sed -r "s/$1./$2/g" | \
-    awk '{print "The subodmain " $1 " is a " $4 " record and points to " $5 }'
+    awk '{print "The subdomain " $1 " is a " $4 " record and points to " $5 }'
 }
 argv=("$@")
 if (($# != 2)); then
