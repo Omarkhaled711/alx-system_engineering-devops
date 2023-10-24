@@ -20,5 +20,5 @@ if __name__ == '__main__':
             todo_completed.append(task.get('title'))
     print(
         f"Employee {user.get('name')}\
-is done with tasks({len(todo_completed)}/{len(todo_lis)})")
+ is done with tasks({len(todo_completed)}/{len(todo_lis)})")
     [print(f"\t {task}") for task in todo_completed]
